@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #333;
+  background-color: #f4f4f4;
+  overflow-x: hidden;
+}
+
+header {
+  padding: 10px 0;
+  text-align: center;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+#modal-btn {
+  border: none;
+  background: none;
+  color: green;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-box {
+  margin: 10% auto;
+  width: 600px;
+
+  background-color: steelblue;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  animation-name: modalopen;
+  animation-duration: var(--modal-duration);
+}
+
+@keyframes modalopen {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+form input,
+form textarea {
+  width: 95%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+form textarea {
+  height: 100px;
+}
+
+form label {
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 5px 0;
+}
+
+.btn {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: inherit;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.btn:hover {
+  background-color: #000;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.ideas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.ideas .card {
+  position: relative;
+  background-color: #fff;
+  margin: 10px;
+  padding: 20px 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.tag {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin: 5px;
+  font-size: 14px;
+}
+
+.tag-technology {
+  background: steelblue;
+}
+
+.tag-software {
+  background: coral;
+}
+
+.tag-business {
+  background: green;
+}
+
+.tag-education {
+  background: purple;
+}
+
+.tag-health {
+  background: red;
+}
+
+.tag-inventions {
+  background: orange;
+}
+
+.delete {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  color: red;
+  background: none;
+  border: none;
+}
+
+.delete:hover {
+  color: #000;
+}
+
+.date {
+  color: #999;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .modal-box {
+    width: 90%;
+  }
+}

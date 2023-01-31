@@ -1,0 +1,68 @@
+body {
+  background: #000;
+  color: #fff;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#ball {
+  animation: roll infinite 3s linear;
+  color: white;
+  width: 25%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: 0 0;
+  transform: rotate(0) translate3D(-50%, -50%, 0);
+  backface-visibility: hidden;
+  will-change: transform, color;
+}
+
+path {
+  fill: currentColor;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 5px;
+  background: #333;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background: blue;
+}
+
+@keyframes roll {
+  0% {
+    transform: rotate(0) translate3D(-50%, -50%, 0);
+    color: white;
+  }
+  30% {
+    color: blue;
+  }
+  100% {
+    transform: rotate(360deg) translate3D(-50%, -50%, 0);
+    color: white;
+  }
+}
