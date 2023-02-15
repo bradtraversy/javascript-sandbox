@@ -6,7 +6,7 @@ The `Shopping List`, `Flixx`, `Tracalorie`, `Tracalorie-webpack`, and `Random Id
 
 ## The Starter Files
 
-There is a folder called "javascript-sandbox-start", which contains the same file structure, only without the JavaScript. You can use these to follow along with the course or create your own files as you go. The main projects are not included in the starter files.
+There is a folder called "javascript-sandbox-start", which contains the starter files for the learning modules. You can use these to follow along with the course or create your own files as you go. The main projects are NOT included in the starter files. They are included in the course files within those sections as well as in their own repos.
 
 ## Premium Docs
 

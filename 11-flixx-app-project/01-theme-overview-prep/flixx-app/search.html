@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="lib/fontawesome.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/spinner.css" />
+    <script src="js/script.js" defer></script>
+    <title>Flixx | Search Movies & Shows</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="container">
+        <div class="logo"><a href="/">FLIXX</a></div>
+        <nav>
+          <ul>
+            <li>
+              <a class="nav-link" href="/">Movies</a>
+            </li>
+            <li>
+              <a class="nav-link" href="/shows.html">TV Shows</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Search Movies -->
+    <section class="search">
+      <div class="container">
+        <div id="alert"></div>
+        <form action="/search.html" class="search-form">
+          <div class="search-radio">
+            <input type="radio" id="movie" name="type" value="movie" checked />
+            <label for="movies">Movies</label>
+            <input type="radio" id="tv" name="type" value="tv" />
+            <label for="shows">TV Shows</label>
+          </div>
+          <div class="search-flex">
+            <input
+              type="text"
+              name="search-term"
+              id="search-term"
+              placeholder="Enter search term"
+            />
+            <button class="btn" type="submit">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Search Results -->
+    <section id="search-results-wrapper" class="container">
+      <heading id="search-results-heading"></heading>
+      <div id="search-results" class="grid">
+        <div class="card">
+          <a href="#">
+            <img src="images/no-image.jpg" class="card-img-top" alt="" />
+          </a>
+          <div class="card-body">
+            <h5 class="card-title">Movie Or Show Name</h5>
+            <p class="card-text">
+              <small class="text-muted">Release: XX/XX/XXXX</small>
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <a href="#">
+            <img src="images/no-image.jpg" class="card-img-top" alt="" />
+          </a>
+          <div class="card-body">
+            <h5 class="card-title">Movie Or Show Name</h5>
+            <p class="card-text">
+              <small class="text-muted">Release: XX/XX/XXXX</small>
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <a href="#">
+            <img src="images/no-image.jpg" class="card-img-top" alt="" />
+          </a>
+          <div class="card-body">
+            <h5 class="card-title">Movie Or Show Name</h5>
+            <p class="card-text">
+              <small class="text-muted">Release: XX/XX/XXXX</small>
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <a href="#">
+            <img src="images/no-image.jpg" class="card-img-top" alt="" />
+          </a>
+          <div class="card-body">
+            <h5 class="card-title">Movie Or Show Name</h5>
+            <p class="card-text">
+              <small class="text-muted">Release: XX/XX/XXXX</small>
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <a href="#">
+            <img src="images/no-image.jpg" class="card-img-top" alt="" />
+          </a>
+          <div class="card-body">
+            <h5 class="card-title">Movie Or Show Name</h5>
+            <p class="card-text">
+              <small class="text-muted">Release: XX/XX/XXXX</small>
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <a href="#">
+            <img src="images/no-image.jpg" class="card-img-top" alt="" />
+          </a>
+          <div class="card-body">
+            <h5 class="card-title">Movie Or Show Name</h5>
+            <p class="card-text">
+              <small class="text-muted">Release: XX/XX/XXXX</small>
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <a href="#">
+            <img src="images/no-image.jpg" class="card-img-top" alt="" />
+          </a>
+          <div class="card-body">
+            <h5 class="card-title">Movie Or Show Name</h5>
+            <p class="card-text">
+              <small class="text-muted">Release: XX/XX/XXXX</small>
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <a href="#">
+            <img src="images/no-image.jpg" class="card-img-top" alt="" />
+          </a>
+          <div class="card-body">
+            <h5 class="card-title">Movie Or Show Name</h5>
+            <p class="card-text">
+              <small class="text-muted">Release: XX/XX/XXXX</small>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div id="pagination">
+        <div class="pagination">
+          <button class="btn btn-primary" id="prev">Prev</button>
+          <button class="btn btn-primary" id="next">Next</button>
+          <div class="page-counter">Page 1 of 5</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+      <div class="container">
+        <div class="logo"><span>FLIXX</span></div>
+        <div class="social-links">
+          <a href="https://www.facebook.com" target="_blank"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a href="https://www.twitter.com" target="_blank"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a href="https://www.instagram.com" target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+    <div class="spinner"></div>
+  </body>
+</html>
