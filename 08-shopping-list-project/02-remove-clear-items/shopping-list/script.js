@@ -23,7 +23,7 @@ function addItem(e) {
 
   itemList.appendChild(li);
 
-  newItem = '';
+  itemInput.value = '';
 }
 
 function createButton(classes) {
