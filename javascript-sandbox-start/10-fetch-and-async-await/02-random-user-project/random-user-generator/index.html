@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="spinner.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Random User Generator</title>
+  </head>
+  <body class="bg-purple-800 text-white overflow-x-hidden">
+    <div
+      class="relative max-w-2xl m-auto mt-12 border border-white rounded-lg p-4"
+    >
+      <div class="text-center">
+        <h1 class="text-2xl">Random User Generator</h1>
+        <button
+          id="generate"
+          class="relative bg-black text-white px-4 py-2 rounded w-full my-4"
+        >
+          <div class="spinner hidden"></div>
+          Generate User
+        </button>
+      </div>
+
+      <div id="user" class="mt-6">
+         <div class="flex justify-between">
+          <div class="flex">
+            <img
+              class="w-48 h-48 rounded-full mr-8"
+              src="https://randomuser.me/api/portraits/women/45.jpg"
+            />
+            <div class="space-y-3">
+              <p class="text-xl">
+                <span class="font-bold">Name: </span>Sara Wilson
+              </p>
+              <p class="text-xl">
+                <span class="font-bold">Email: </span> sarawilson@gmail.com
+              </p>
+              <p class="text-xl">
+                <span class="font-bold">Phone: </span> (555) 555-5555
+              </p>
+              <p class="text-xl">
+                <span class="font-bold">Location: </span> Boston MA
+              </p>
+              <p class="text-xl"><span class="font-bold">Age: </span> 30</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

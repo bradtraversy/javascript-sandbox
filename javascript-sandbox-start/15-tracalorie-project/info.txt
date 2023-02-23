@@ -1,0 +1,1 @@
+The starter files include the theme (html/css) only. We will add the JavaScript throughout the videos.
