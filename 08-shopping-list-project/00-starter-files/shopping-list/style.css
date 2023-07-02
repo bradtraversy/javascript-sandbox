@@ -25,7 +25,8 @@ header {
 
 header h1 {
   font-weight: 300;
-  margin-left: 10px;
+  margin-left: 2px;
+  font-size: 35px;
 }
 
 .container {
@@ -59,16 +60,18 @@ header h1 {
 
 /* Buttons */
 .btn {
-  background-color: #333;
+  background-color: #2cc336;
   color: #fff;
   border: none;
   border-radius: 5px;
   padding: 10px 20px;
   cursor: pointer;
+  font-size: 18px;
+  font-weight: 300;
 }
 
 .btn:hover {
-  background-color: #444;
+  background-color: #ded8d8;
 }
 
 .btn-link {
