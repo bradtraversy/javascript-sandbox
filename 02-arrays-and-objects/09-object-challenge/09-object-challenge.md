@@ -58,7 +58,7 @@ const library = [
 ```js
 library[0].status.read = true;
 library[1].status.read = true;
-library[3].status.read = true;
+library[2].status.read = true;
 ```
 
 ### Step 4 Solution
